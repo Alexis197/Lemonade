@@ -60,7 +60,7 @@ fun LemonApp() {
     ) {
         when (currentStep) {
             1 -> {
-                LemonTextAndImage(
+                CaracteristicasLemonImage(
                     textLabelResourceId = R.string.lemon_select,
                     drawableResourceId = R.drawable.lemon_tree,
                     contentDescriptionResourceId = R.string.lemon_tree_content_description,
@@ -71,7 +71,7 @@ fun LemonApp() {
                 )
             }
             2 -> {
-                LemonTextAndImage(
+                CaracteristicasLemonImage(
                     textLabelResourceId = R.string.lemon_squeeze,
                     drawableResourceId = R.drawable.lemon_squeeze,
                     contentDescriptionResourceId = R.string.lemon_content_description,
@@ -83,14 +83,52 @@ fun LemonApp() {
                     }
                 )
             }
-
-
+            3 -> {
+                CaracteristicasLemonImage(
+                    textLabelResourceId = R.string.lemon_drink,
+                    drawableResourceId = R.drawable.lemon_drink,
+                    contentDescriptionResourceId = R.string.lemonade_content_description,
+                    onImageClick = {
+                        currentStep = 4
+                    }
+                )
+            }
+            4 -> {
+                CaracteristicasLemonImage(
+                    textLabelResourceId = R.string.lemon_empty_glass,
+                    drawableResourceId = R.drawable.lemon_restart,
+                    contentDescriptionResourceId = R.string.empty_glass_content_description,
+                    onImageClick = {
+                        currentStep = 1
+                    }
+                )
+            }
+            3 -> {
+                CaracteristicasLemonImage(
+                    textLabelResourceId = R.string.lemon_drink,
+                    drawableResourceId = R.drawable.lemon_drink,
+                    contentDescriptionResourceId = R.string.lemonade_content_description,
+                    onImageClick = {
+                        currentStep = 4
+                    }
+                )
+            }
+            4 -> {
+                CaracteristicasLemonImage(
+                    textLabelResourceId = R.string.lemon_empty_glass,
+                    drawableResourceId = R.drawable.lemon_restart,
+                    contentDescriptionResourceId = R.string.empty_glass_content_description,
+                    onImageClick = {
+                        currentStep = 1
+                    }
+                )
+            }
         }
     }
 }
 
 @Composable
-fun LemonTextAndImage(
+fun CaracteristicasLemonImage(
     textLabelResourceId: Int,
     drawableResourceId: Int,
     contentDescriptionResourceId: Int,
