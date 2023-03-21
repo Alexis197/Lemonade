@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Limonada Directa</string>
     <string name="lemon_select">Presiona el arbol de limon y escoge un limon</string>
-    <string name="lemon_squeeze">Keep tapping the lemon to squeeze it</string>
+    <string name="lemon_squeeze">Manten presionado para exprimir el limon</string>
     <string name="lemon_drink">Presiona la limonada para beberla </string>
     <string name="lemon_empty_glass">Presiona el vaso vacio para volver hacer otra limonada</string>
     <string name="lemon_tree_content_description">Arbol de limon</string>
